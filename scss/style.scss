@@ -1,0 +1,80 @@
+/*!
+Theme Name: Pappo
+Theme URI: http://underscores.me/
+Author: Thai Tu
+Author URI: http://underscores.me/
+Description: A Clean Restaurant Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pappo
+Tags:
+*/
+
+
+/*
+** BASE
+**
+*/
+
+@import "base/defaults";
+@import "base/mixins-master";
+@import "base/colors";
+@import "base/type";
+@import "base/responsive";
+@import "base/elements";
+@import "base/tables";
+@import "base/lists";
+@import "base/links";
+@import "base/reset";
+
+
+/*
+** LAYOUT
+**
+*/
+
+@import "layout/layouts";
+@import "layout/front-layout";
+@import "layout/food-menu";
+
+
+
+/*
+** MODULE
+**
+*/
+
+@import "module/accessibility";
+@import "module/alignments";
+@import "module/buttons";
+@import "module/clearings";
+@import "module/comments";
+@import "module/divider";
+@import "module/form";
+@import "module/header";
+@import "module/infinite-scroll";
+@import "module/posts-and-pages";
+@import "module/site-footer";
+@import "module/site-nav";
+@import "module/testimonials";
+@import "module/widgets";
+
+
+
+/*
+** MEDIA
+**
+*/
+
+@import "media/media";
+
+
+
+/*
+** PLUGINS
+**
+**/
+
+@import "plugins/open-table";
+@import "plugins/contact-form-7";

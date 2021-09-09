@@ -1,0 +1,156 @@
+/*
+** Front Header
+**
+*/
+
+.header-area-front {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        height: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        height: 100%;
+    }
+}
+
+.header-front {
+    margin: auto;
+    text-align: center;
+}
+
+.header-front-subtitle {
+    font-family: $font-secondary;
+    font-size: 72px;
+    font-weight: lighter;
+    line-height: 55px;
+    margin: 0;
+    margin-top: -60px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 60px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 40px;
+        margin-top: 120px;
+    }
+}
+
+.header-front-title {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 100px;
+    font-weight: 800;
+    margin-bottom: -15px;
+    margin-top: -35px;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 70px;
+        line-height: 70px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 40px;
+        line-height: 35px;
+        margin-top: -15px;
+        padding: 0 30px;
+    }
+}
+
+
+/*
+** Header
+**
+*/
+
+.header-area {
+    color: white;
+    height: 350px;
+    text-decoration: none;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        height: 300px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        height: 230px;
+    }
+}
+
+.header-section-content {
+    margin-top: 50px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin-top: 85px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin-top: 95px;
+    }
+}
+
+.header-subtitle {
+    font-family: $font-secondary;
+    font-size: $font-x-large;
+    font-weight: lighter;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+        margin-top: 40px;
+        padding: 0 40px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 36px;
+        margin-top: 65px;
+    }
+}
+
+.header-title {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+        padding: 0 40px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 32px;
+        letter-spacing: 0;
+    }
+}

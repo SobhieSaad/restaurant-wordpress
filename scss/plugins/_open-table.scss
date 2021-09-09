@@ -1,0 +1,100 @@
+.reservation-section-content {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 40px auto 40px;
+    }
+}
+
+.reservation-ot-title {
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 0 auto 30px;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 40px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+}
+
+.reservation-ot-description {
+    font-family: $font-primary;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 40px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 0 20px;
+    }
+}
+
+.ot-title {
+    display: none !important;
+}
+
+.ot-dtp-picker {
+    padding: 0 !important;
+
+    &.wide {
+        background: 0 0;
+        margin: auto;
+        width: 50.5rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin: auto;
+    }
+}
+
+.picker__box {
+    box-sizing: content-box;
+    padding: 1rem;
+}
+
+.ot-button {
+    background-color: $color-gold;
+    font-family: $font-primary !important;
+    text-transform: uppercase;
+    transition: all .5s !important;
+}
+
+.ot-dtp-picker.wide .ot-dtp-picker-form {
+    font-family: $font-primary;
+    height: 50px !important;
+}
+
+.ot-powered {
+    color: #CFD8DC;
+    font-family: $font-primary;
+    font-size: 12px;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ot-dtp-picker.wide .ot-powered-by {
+    display: none;
+}
+
+.ot-powered-by {
+    display: none;
+    margin-top: 40px !important;
+}

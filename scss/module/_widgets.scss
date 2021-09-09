@@ -1,0 +1,30 @@
+.widget {
+    margin: 0 0 1.5em;
+
+    /* Make sure select elements fit in widgets. */
+    select {
+        max-width: 100%;
+    }
+}
+
+.widget-area {
+    font-family: $font-primary;
+    text-align: center;
+    width: 550px;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+      	padding: 0 80px;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 14px;
+        padding: 0 15px;
+    }
+}
+
+.widget-container {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,89 @@
+.testimonial-section {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin: 40px auto 80px;
+    }
+}
+
+.testimonial-column-container {
+    width: 46%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        width: 100%;
+    }
+}
+
+.testimonial-container {
+    margin-bottom: 40px;
+    position: relative;
+
+    &:before {
+        color: $color-bluegrey-50;
+        content: "\f10d";
+        font-family: FontAwesome;
+        font-size: 64px;
+        font-style: normal;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        &:before {
+            font-size: 64px;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+
+        &:before  {
+            font-size: 40px;
+        }
+    }
+}
+
+.testimonial-quotes {
+    font-family: $font-primary;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding: 30px 0 0 10px;
+    position: relative;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 45px 0 0 10px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 25px 0 0 0;
+    }
+}
+
+.testimonial-name {
+    font-family: $font-primary;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 10px;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding-left: 0;
+    }
+}
+
+.sup { background-color: red;}

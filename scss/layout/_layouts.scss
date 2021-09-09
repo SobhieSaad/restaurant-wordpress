@@ -1,0 +1,150 @@
+/*
+** Layouts
+**
+*/
+
+.full {
+    width: 100%;
+}
+
+.main-page {
+    margin: 0 auto;
+    width: 1200px;
+
+    @media only screen and (max-width: $breakpoint-large) {
+
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 40px;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 0 20px;
+    }
+}
+
+.inner {
+    padding: 20px 0;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 5px 0;
+    }
+}
+
+.entry-content {
+    font-family: $font-primary;
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        margin: 40px 0;
+
+        .layoutArea .column img {
+            height: 100%;
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+        margin: 30px auto;
+
+        .layoutArea .column img {
+            width: 100%;
+        }
+    }
+}
+
+.column-container {
+    width: 46%;
+}
+
+
+
+/*
+** Positioning
+**
+*/
+
+.l-center {
+    text-align: center;
+}
+
+.l-left {
+    float: left;
+}
+
+.l-right {
+    float: right;
+}
+
+
+/*
+** Flebox
+**
+*/
+
+.l-flex {
+    display: flex;
+
+    &.is-hori {
+        flex-direction: row;
+    }
+
+    &.is-hori-rev {
+        flex-direction: row-reverse;
+    }
+
+    &.is-vert {
+        flex-direction: column;
+    }
+
+    &.is-vert-rev {
+        flex-direction: column-reverse;
+    }
+
+    &.align-hori-left {
+        justify-content: left;
+    }
+
+    &.align-hori-center {
+        justify-content: center;
+    }
+
+    &.align-vert-center {
+        align-items: center;
+    }
+
+    &.align-vert-flex-start {
+        align-items: flex-start;
+    }
+
+    &.align-hori-space-between {
+        justify-content: space-between;
+    }
+
+    &.align-hori-space-around {
+        justify-content: space-around;
+    }
+
+    &.flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        display: block;
+    }
+}
+
+.is-rounded {
+    border-radius: 3px;
+}

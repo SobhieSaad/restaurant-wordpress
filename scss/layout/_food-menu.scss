@@ -1,0 +1,92 @@
+.menu-section-content {
+    margin: 80px auto 60px;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 40px auto 40px;
+    }
+}
+
+.menu-list-container {
+    margin-top: $unit * 5;
+    position: relative;
+}
+
+.menu-column-container {
+    width: 46%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 0;
+    }
+}
+
+.menu-category-container {
+    margin-bottom: $unit * 10;
+    width: 100%;
+}
+
+.menu-category {
+    border-bottom: 1px $color-bluegrey-50 solid;
+    font-family: $font-primary;
+    letter-spacing: 1px;
+    margin: 0 0 ($unit * 6);
+    padding-bottom: $unit;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+}
+
+// don't rename to .menu-item as it will conflict with default navigation menu class
+.menu-list-item {
+    display: inline-block;
+    font-family: $font-primary;
+    font-size: $font-small;
+    font-weight: 600;
+    margin: 0;
+    padding-right: $unit * 16;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+    }
+}
+
+.menu-list-item-price {
+    font-family: $font-primary;
+    float: right;
+    font-size: $font-small;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+    }
+}
+
+.menu-list-item-des {
+    font-family: $font-primary;
+    font-size: $font-standard;
+    font-weight: 300;
+    margin: 0;
+    padding-right: $unit * 16;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+    }
+}

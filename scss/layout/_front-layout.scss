@@ -1,0 +1,110 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.front-section-content {
+    margin: 80px auto;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 40px auto;
+        padding: 0 10px;
+    }
+}
+
+.front-column-container {
+    text-align: center;
+    width: 46%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 0 10px 0;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding: 0px;
+    }
+}
+
+.section-subtitle {
+    font-family: $font-secondary;
+    font-size: $font-x-large;
+    font-weight: lighter;
+    margin: 0;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 35px;
+    }
+}
+
+.section-title {
+    color: $color-bluegrey-900;
+    font-family: $font-primary;
+    font-size: $font-x-large;
+    font-weight: 900;
+    margin-top: -45px;
+    margin-bottom: -5px;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        font-size: 56px;
+        margin-top: -45px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 30px;
+        margin-top: -25px;
+    }
+}
+
+.section-description {
+    font-family: $font-primary;
+    padding: 0 50px;
+    text-align: center;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 80px;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: $font-mobile;
+        padding: 0;
+    }
+}
+
+.section-image {
+    height: 384px;
+    outline: 1px solid $color-white;
+    outline-offset: -20px;
+    width: 100%;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        display: none;
+    }
+}
+
+.stars {
+    display: inline-block;
+    margin: 0 15px;
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        margin: 0 8px;
+    }
+}

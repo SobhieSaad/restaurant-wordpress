@@ -1,0 +1,261 @@
+.site-header {
+
+
+}
+
+.site-branding {
+    display: inline-block;
+    float: left;
+
+    & h1 {
+        margin: 0;
+    }
+
+    & .site-description {
+        display: none;
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding-left: 0;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        padding-left: 0px;
+    }
+}
+
+.site-title a {
+    color: $color-white;
+    font-family: $font-primary;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .4s;
+    z-index: 102;
+
+    &:hover {
+        color: $color__link-hover;
+        transition: .5s all;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        font-size: 24px;
+    }
+}
+
+.main-navigation {
+    float: right;
+
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+
+        ul {
+            float: left;
+            position: absolute;
+            left: -999em;
+            z-index: 99999;
+
+            ul {
+                left: -999em;
+                top: 0;
+            }
+
+            li {
+                &:hover > ul,
+                &.focus > ul {
+                    left: 100%;
+                }
+            }
+
+            a {
+                width: 200px;
+            }
+
+            :hover > a,
+            .focus > a {
+            }
+
+            a:hover,
+            a.focus {
+            }
+        }
+
+        li:hover > ul,
+        li.focus > ul {
+            left: auto;
+        }
+    }
+
+    li {
+        font-family: $font-primary;
+        float: left;
+        font-size: $font-standard;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 50px;
+        position: relative;
+        text-transform: uppercase;
+
+        &:hover > a,
+        &.focus > a {
+        }
+    }
+
+    a {
+        color: $color-white;
+        display: block;
+        padding: 0 20px;
+        text-decoration: none;
+        transition: 0.4s all;
+    }
+
+    .current_page_item > a,
+    .current-menu-item > a,
+    .current_page_ancestor > a,
+    .current-menu-ancestor > a {
+    }
+
+    @media only screen and (max-width: $breakpoint-medium) {
+
+        padding: 0 0 0px 0;
+
+        ul {
+            background-color: $color-black;
+            border-radius: 3px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 80px 40px 0;
+            position: absolute;
+            z-index: 1;
+        }
+
+        li {
+            border-bottom: 1px solid $color-bluegrey-800;
+            float: none;
+        }
+
+
+        a {
+            color: rgba(255,255,255,1);
+            padding: 5px 0;
+        }
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+
+        float: none;
+
+        ul {
+            background-color: $color-black;
+            border-radius: 3px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px 40px 0;
+            position: absolute;
+            top: 0;
+            z-index: 101;
+        }
+
+        li {
+            border-bottom: 1px solid $color-bluegrey-800;
+            float: none;
+        }
+
+
+        a {
+            color: rgba(255,255,255,1);
+            font-size: $font-mobile;
+            padding: 5px 0;
+        }
+    }
+}
+
+/*
+** Responsive Menu
+**
+*/
+
+button.menu-toggle {
+
+    @media screen and (max-width: $breakpoint-medium) {
+        background: none;
+        margin-top: 10px;
+        padding: 0;
+        position: absolute;
+        right: 40px;
+        z-index: 102;
+    }
+
+    @media screen and (max-width: $breakpoint-small) {
+        background: none;
+        margin-top: 10px;
+        padding: 0;
+        position: absolute;
+        right: 20px;
+        z-index: 102;
+    }
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: block;
+    float: right;
+}
+
+@media screen and (min-width: $breakpoint-large) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: block;
+    }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: block;
+    }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+    .site-main & {
+        margin: 0 0 1.5em;
+        overflow: hidden;
+    }
+
+    .nav-previous {
+        float: left;
+        width: 50%;
+    }
+
+    .nav-next {
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
+}
+
+.nav-menu {
+    // background-color: red;
+}
